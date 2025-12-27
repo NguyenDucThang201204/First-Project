@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Golang",
+    "image": "1.jpg",
+    "genre": "Programming Language",
+    "rating": "8.3"
+  },
+  {
+    "id": 2,
+    "title": "Rust",
+    "image": "2.jpg",
+    "genre": "Programming Language",
+    "rating": "7.7"
+  },
+  {
+    "id": 3,
+    "title": "Python",
+    "image": "3.jpg",
+    "genre": "Programming Language",
+    "rating": "6.3"
+  },
+  {
+    "id": 4,
+    "title": "HTML5",
+    "image": "4.jpg",
+    "genre": "Markup Language",
+    "rating": "9.3"
+  },
+  {
+    "id": 5,
+    "title": "Java",
+    "image": "5.jpg",
+    "genre": "Programming Language",
+    "rating": "6.9"
+  },
+  {
+    "id": 6,
+    "title": "Angular",
+    "image": "6.jpg",
+    "genre": "Web Framework",
+    "rating": "8.4"
+  },
+  {
+    "id": 7,
+    "title": "C++",
+    "image": "7.jpg",
+    "genre": "Programming Language",
+    "rating": "9.8"
+  },
+  {
+    "id": 8,
+    "title": "C#",
+    "image": "8.jpg",
+    "genre": "Programming Language",
+    "rating": "7.2"
+  },
+  {
+    "id": 9,
+    "title": "C",
+    "image": "9.jpg",
+    "genre": "Programming Language",
+    "rating": "1.7"
+  },
+  {
+    "id": 10,
+    "title": "Kotlin",
+    "image": "10.jpg",
+    "genre": "Programming Language",
+    "rating": "7.5"
+  },
+  {
+    "id": 11,
+    "title": "Cloudflare",
+    "image": "11.png",
+    "genre": "Cloud Service",
+    "rating": "8.5"
+  },
+  {
+    "id": 12,
+    "title": "Discord",
+    "image": "12.png",
+    "genre": "Communication",
+    "rating": "7.5"
+  },
+  {
+    "id": 13,
+    "title": "Figma",
+    "image": "13.png",
+    "genre": "Design Tool",
+    "rating": "8.4"
+  },
+  {
+    "id": 14,
+    "title": "Next.js",
+    "image": "14.png",
+    "genre": "Web Framework",
+    "rating": "6.5"
+  },
+  {
+    "id": 15,
+    "title": "Node.js",
+    "image": "15.png",
+    "genre": "Runtime Environment",
+    "rating": "9.8"
+  },
+  {
+    "id": 16,
+    "title": "React",
+    "image": "16.png",
+    "genre": "JavaScript Library",
+    "rating": "9.1"
+  },
+  {
+    "id": 17,
+    "title": "Rider",
+    "image": "17.png",
+    "genre": "IDE",
+    "rating": "4.0"
+  },
+  {
+    "id": 18,
+    "title": "Ubuntu",
+    "image": "18.png",
+    "genre": "Operating System",
+    "rating": "6.3"
+  },
+  {
+    "id": 19,
+    "title": "Visual Studio",
+    "image": "19.png",
+    "genre": "IDE",
+    "rating": "9.5"
+  },
+  {
+    "id": 20,
+    "title": "Visual Studio Code",
+    "image": "20.png",
+    "genre": "Code Editor",
+    "rating": "7.4"
+  }
+]
