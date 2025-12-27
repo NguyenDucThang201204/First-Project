@@ -32,6 +32,8 @@ function App() {
   }, [])
 
   return (
+    // footer thì để bên ngoài container để nó full width
+    // container vì đa số ngày nay người ta hay để max-width= 1200px để nội dung không bị quá rộng
     <>
       <div className="container">
         <Header 
@@ -41,8 +43,9 @@ function App() {
         
         <MoviesGrid movies={movies} />
         
-        <Footer />
+        
       </div>
+      <Footer />
     </>
   )
 }
