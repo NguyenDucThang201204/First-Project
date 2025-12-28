@@ -3,6 +3,7 @@ interface HeaderProps {
   onSearchChange: (value: string) => void;
 }
 
+// Header component nhận props từ App 
 function Header({ searchTerm, onSearchChange }: HeaderProps) {
   return (
     <header className="header">
