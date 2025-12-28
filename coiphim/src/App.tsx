@@ -3,6 +3,7 @@ import './css/styles.css'
 import Header from './components/Header'
 import MoviesGrid from './components/MoviesGrid'
 import Footer from './components/Footer'
+import axios from 'axios'
 
 interface Movie {
   id: number;
@@ -13,23 +14,29 @@ interface Movie {
 }
 
 function App() {
+  // State để lưu trữ từ khóa tìm kiếm và danh sách phim
+  // bên trong useState sẽ là giá trị khởi tạo (initial value)
+  // searchTerm khởi tạo là chuỗi rỗng
+  // movies khởi tạo là mảng rỗng
+  // setSearchTerm và setMovies là hàm để cập nhật giá trị tương ứng có sẵn từ useState
   const [searchTerm, setSearchTerm] = useState('')
   const [movies, setMovies] = useState<Movie[]>([])
 
   useEffect(() => {
-    // Load dữ liệu từ file movies.json
-    fetch('/movies.json')
-      .then(response => response.json())
-      .then(data => {
-        // Chuyển đổi rating từ string sang number
-        const moviesData = data.map((movie: any) => ({
+    const loadMovies = async () =>{
+      try{
+        const res = await axios.get('/movies.json');
+        const moviesData = res.data.map((movie: Movie) => ({
           ...movie,
-          rating: parseFloat(movie.rating)
-        }))
-        setMovies(moviesData)
-      })
-      .catch(error => console.error('Error loading movies:', error))
-  }, [])
+          rating: Number(movie.rating)
+        }));
+        setMovies(moviesData);
+      }catch(exception){
+        console.log("Error loading movies: ", exception);
+        }
+      }
+      loadMovies();
+    }, []);
 
   return (
     // footer thì để bên ngoài container để nó full width
